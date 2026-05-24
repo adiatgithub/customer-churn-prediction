@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os
 st.set_page_config(
     page_title="AI Customer Churn Predictor",
     page_icon="📊",
@@ -80,10 +81,35 @@ color:white;
 </style>
 """, unsafe_allow_html=True)
 
-# Load model files
-model = joblib.load("../models/churn_model.pkl")
-scaler = joblib.load("../models/scaler.pkl")
-model_features = joblib.load("../models/model_features.pkl")
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+MODEL_DIR = os.path.join(
+    BASE_DIR,
+    "..",
+    "models"
+)
+
+model = joblib.load(
+    os.path.join(
+        MODEL_DIR,
+        "churn_model.pkl"
+    )
+)
+
+scaler = joblib.load(
+    os.path.join(
+        MODEL_DIR,
+        "scaler.pkl"
+    )
+)
+
+model_features = joblib.load(
+    os.path.join(
+        MODEL_DIR,
+        "model_features.pkl"
+    )
+)
 
 st.markdown("""
 # 📊Customer Churn Prediction Dashboard
