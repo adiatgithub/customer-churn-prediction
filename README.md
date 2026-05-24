@@ -1,4 +1,6 @@
 📉 Customer Churn Prediction
+
+
 A machine learning pipeline to predict customer churn using a Telco dataset. Three classification models were benchmarked — Random Forest delivered the best performance.
 
 The system performs data preprocessing, exploratory data analysis, class imbalance handling, model comparison, and deployment through an interactive Streamlit dashboard.
