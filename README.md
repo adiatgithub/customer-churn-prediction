@@ -6,12 +6,19 @@ A machine learning pipeline to predict customer churn using a Telco dataset. Thr
 The system performs data preprocessing, exploratory data analysis, class imbalance handling, model comparison, and deployment through an interactive Streamlit dashboard.
 
 📈 Model Performance
+
 Random Forest (Selected Model)
+
 Metric	Score
+
 Accuracy	78.25%
+
 Precision	58.76%
+
 Recall	60.96%
+
 F1 Score	59.84%
+
 ROC-AUC	81.70%
 
 
