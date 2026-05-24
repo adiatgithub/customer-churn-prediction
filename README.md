@@ -87,3 +87,8 @@ customer-churn-prediction/
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
+
+
+## Live Demo
+
+🔗 https://customer-churn-prediction-sbt2f9tjzlks7pvu5gvfhd.streamlit.app/
